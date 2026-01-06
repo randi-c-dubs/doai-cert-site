@@ -40,6 +40,14 @@
     }
   }
 
+  // Check for URL parameter on page load
+  const urlParams = new URLSearchParams(window.location.search);
+  const certIdParam = urlParams.get('certId');
+  if(certIdParam){
+    input.value = certIdParam;
+    verify(certIdParam);
+  }
+
   form.addEventListener('submit', function(e){
     e.preventDefault();
     const id = input.value.trim();
