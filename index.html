@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Verify Certificate — Day of AI Rwanda</title>
+  <link rel="icon" href="./assets/images/doai_logo.png">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Day of AI Rwanda</h1>
+    <div class="separator"></div>
+    <h2>Verify the authenticity of certificates issued by Day of AI Rwanda</h2>
+
+    <div id="result"></div>
+
+    <form id="verify-form" class="card verify-form-card">
+      <label for="cert-id">Certificate ID</label>
+      <input id="cert-id" name="cert-id" type="text" placeholder="Enter your certificate ID" aria-describedby="cert-help">
+      <p id="cert-help" class="help">The Certificate ID can be found on the bottom of your certificate document.</p>
+      <button id="verify-btn" type="submit">Verify Certificate &#9654;</button>
+    </form>
+
+    <div id="result" class="card"></iv>
+
+    <h2>How Certificate Verification Works</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/3381/3381635.png" alt="Driver License Icon" style="width:40px; height:40px; margin-right:8px; vertical-align:middle;">
+        <h3>Enter Certificate ID</h3>
+        <p>Type your certificate ID into the box and click "Verify Certificate".</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/9919/9919417.png" alt="Verification Icon" style="width:40px; height:40px; margin-right:8px; vertical-align:middle;">
+        <h3>Instant Verification</h3>
+        <p>Our system checks our secure database to verify the certificate's authenticity.</p>
+      </div>
+      <div class="feature">
+        <h3><img src="https://cdn-icons-png.flaticon.com/512/2838/2838912.png" alt="Certificate Icon" style="width:40px; height:40px; margin-right:8px; vertical-align:middle;"> View Certificate Details</h3>
+        <p>If found, you can view and download a PDF of your certificate.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="logos">
+      <img src="./assets/images/doai_logo.png" alt="Day of AI Rwanda Logo">
+      <img src="./assets/images/raise_logo.png" alt="RAISE Logo">
+      <img src="./assets/images/mineduc_logo.png" alt="MINEDUC Logo">
+      <img src="./assets/images/REB_logo.png" alt="REB Logo">
+    </div>
+  </footer>
+
+  <script src="./assets/js/verify.js"></script>
+</body>
+</html>
