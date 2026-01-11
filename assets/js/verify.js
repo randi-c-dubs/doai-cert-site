@@ -27,7 +27,8 @@
       const text = await res.json();
 
       if(text.status === 'success'){
-        window.location.href = text.certificatePdfUrl;
+        window.open(text.certificatePdfUrl, '_blank');
+        showMessage('Certificate found. <a href="' + text.certificatePdfUrl + '" target="_blank">Click here to download.</a>', false);
       } else {
         showMessage('Certificate not found. Please try again with a valid certificate ID.', true);
       }
